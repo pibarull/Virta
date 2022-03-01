@@ -15,12 +15,13 @@ private enum Constants {
 
 class LoginTextField: UIView {
 
-    let textField = UITextField()
-    let imageView = UIImageView()
-    let separatorView = UIView()
+    private let textField = UITextField()
+    private let imageView = UIImageView()
+    private let separatorView = UIView()
 
     init() {
         super.init(frame: .zero)
+
         setUpView()
         setUpTextField()
         setUpSeparator()
@@ -70,6 +71,10 @@ class LoginTextField: UIView {
         }
     }
 
+    func getTextField() -> UITextField {
+        return textField
+    }
+
     func setPlaceholder(with text: String) -> LoginTextField {
         textField.placeholder = text
         return self
@@ -78,5 +83,13 @@ class LoginTextField: UIView {
     func setImage(with image: UIImage) -> LoginTextField {
         imageView.image = image
         return self
+    }
+
+    func setTextFieldDelegate(with responsible: Any) {
+        textField.delegate = responsible as? UITextFieldDelegate
+    }
+
+    func setSeparatorColor(with color: UIColor) {
+        separatorView.backgroundColor = color
     }
 }
