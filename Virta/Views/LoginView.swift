@@ -12,10 +12,6 @@ import UIKit
 private enum Constants {
 
     static let headerLabelText = "Log In and Charge!"
-
-    static let emailErrorLabelText = "Incorrect Email"
-    static let passwordErrorLabelText = "Password is too short"
-    static let requiredFieldLabelText = "This field is required"
 }
 
 final class LoginView: UIView {
@@ -31,12 +27,15 @@ final class LoginView: UIView {
     private let textFieldsStackView = UIStackView()
     private let logInButton = UIButton()
 
+    private var loginViewModel: LoginViewModel?
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
-    override init(frame: CGRect) {
+    init(viewModel: LoginViewModel) {
         super.init(frame: .zero)
+        self.loginViewModel = viewModel
 
         setUpView()
         setUpImageView()
@@ -57,6 +56,8 @@ final class LoginView: UIView {
 
         usernameTextField.setTextFieldDelegate(with: self)
         passwordTextField.setTextFieldDelegate(with: self)
+
+        passwordTextField.getTextField().isSecureTextEntry = true
     }
 
     private func setUpHeaderLabel() {
@@ -84,6 +85,21 @@ final class LoginView: UIView {
 
         logInButton.setTitleColor(.black, for: .normal)
         logInButton.setTitle("Log In", for: .normal)
+
+        logInButton.addTarget(superview, action: #selector(logInButtonPressed), for: .touchUpInside)
+    }
+
+    @objc func logInButtonPressed() {
+        usernameTextField.getTextField().resignFirstResponder()
+        passwordTextField.getTextField().resignFirstResponder()
+        loginViewModel?.sendAuthRequest(email: usernameTextField.getTextField().text ?? "",
+                                        password: passwordTextField.getTextField().text ?? "") {
+            let vc = StationsViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            let topVC = UIApplication.topViewController()
+            topVC?.present(nav, animated: false)
+        }
     }
 
     private func setUpLayout() {
@@ -142,8 +158,7 @@ extension LoginView: UITextFieldDelegate {
         }
 
         if textField == passwordTextField.getTextField() {
-            print("Try to login")
-//            didTapLoginButton()
+            logInButtonPressed()
         }
 
         return true
