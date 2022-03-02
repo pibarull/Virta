@@ -25,6 +25,11 @@ final class InitialViewController: UIViewController {
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             present(nav, animated: false)
+        } else {
+            let vc = StationsViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: false)
         }
     }
 }

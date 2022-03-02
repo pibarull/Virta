@@ -20,6 +20,17 @@
 		3B2E5BEC27CD26150085AD89 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3B2E5BEB27CD26150085AD89 /* SnapKit */; };
 		3B2E5BF827CD4BB60085AD89 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5BF727CD4BB60085AD89 /* LoginTextField.swift */; };
 		3B2E5BFA27CD4BEB0085AD89 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5BF927CD4BEB0085AD89 /* UIView+.swift */; };
+		3B2E5BFF27CE2A140085AD89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B2E5BFE27CE2A140085AD89 /* Alamofire */; };
+		3B2E5C0227CE35010085AD89 /* VirtaAPIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C0127CE35010085AD89 /* VirtaAPIClientService.swift */; };
+		3B2E5C0427CE35B80085AD89 /* VirtaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C0327CE35B80085AD89 /* VirtaAPIClient.swift */; };
+		3B2E5C0627CE366E0085AD89 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C0527CE366E0085AD89 /* APIEndpoint.swift */; };
+		3B2E5C0827CE375C0085AD89 /* VirtaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C0727CE375C0085AD89 /* VirtaAPI.swift */; };
+		3B2E5C0B27CE37CF0085AD89 /* AuthModelParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C0A27CE37CF0085AD89 /* AuthModelParameters.swift */; };
+		3B2E5C0D27CE66DC0085AD89 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C0C27CE66DC0085AD89 /* AuthModel.swift */; };
+		3B2E5C1127CE76980085AD89 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1027CE76980085AD89 /* LoginView.swift */; };
+		3B2E5C1427CE80900085AD89 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1327CE80900085AD89 /* LoginViewModel.swift */; };
+		3B2E5C1827CF634B0085AD89 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1727CF634B0085AD89 /* StationsViewController.swift */; };
+		3B2E5C1A27CF6B430085AD89 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1927CF6B430085AD89 /* UIApplication+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +67,16 @@
 		3B2E5BE627CD248C0085AD89 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B2E5BF727CD4BB60085AD89 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		3B2E5BF927CD4BEB0085AD89 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		3B2E5C0127CE35010085AD89 /* VirtaAPIClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaAPIClientService.swift; sourceTree = "<group>"; };
+		3B2E5C0327CE35B80085AD89 /* VirtaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaAPIClient.swift; sourceTree = "<group>"; };
+		3B2E5C0527CE366E0085AD89 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		3B2E5C0727CE375C0085AD89 /* VirtaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaAPI.swift; sourceTree = "<group>"; };
+		3B2E5C0A27CE37CF0085AD89 /* AuthModelParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModelParameters.swift; sourceTree = "<group>"; };
+		3B2E5C0C27CE66DC0085AD89 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		3B2E5C1027CE76980085AD89 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3B2E5C1327CE80900085AD89 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3B2E5C1727CF634B0085AD89 /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		3B2E5C1927CF6B430085AD89 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2E5BEC27CD26150085AD89 /* SnapKit in Frameworks */,
+				3B2E5BFF27CE2A140085AD89 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +133,11 @@
 				3B2E5BB327CD21AF0085AD89 /* SceneDelegate.swift */,
 				3B2E5BFC27CD4C110085AD89 /* Components */,
 				3B2E5BFB27CD4C040085AD89 /* Extensions */,
-				3B2E5BB527CD21AF0085AD89 /* InitialViewController.swift */,
-				3B2E5BE627CD248C0085AD89 /* LoginViewController.swift */,
+				3B2E5C1227CE806F0085AD89 /* ViewModel */,
+				3B2E5C0027CE34DB0085AD89 /* Services */,
+				3B2E5C0F27CE75ED0085AD89 /* Views */,
+				3B2E5C0E27CE75DA0085AD89 /* Controllers */,
+				3B2E5C0927CE37BF0085AD89 /* Model */,
 				3B2E5BB727CD21AF0085AD89 /* Main.storyboard */,
 				3B2E5BBA27CD21B00085AD89 /* Assets.xcassets */,
 				3B2E5BBC27CD21B00085AD89 /* LaunchScreen.storyboard */,
@@ -142,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				3B2E5BF927CD4BEB0085AD89 /* UIView+.swift */,
+				3B2E5C1927CF6B430085AD89 /* UIApplication+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -152,6 +178,52 @@
 				3B2E5BF727CD4BB60085AD89 /* LoginTextField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		3B2E5C0027CE34DB0085AD89 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E5C0127CE35010085AD89 /* VirtaAPIClientService.swift */,
+				3B2E5C0327CE35B80085AD89 /* VirtaAPIClient.swift */,
+				3B2E5C0527CE366E0085AD89 /* APIEndpoint.swift */,
+				3B2E5C0727CE375C0085AD89 /* VirtaAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B2E5C0927CE37BF0085AD89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E5C0A27CE37CF0085AD89 /* AuthModelParameters.swift */,
+				3B2E5C0C27CE66DC0085AD89 /* AuthModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B2E5C0E27CE75DA0085AD89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E5BB527CD21AF0085AD89 /* InitialViewController.swift */,
+				3B2E5BE627CD248C0085AD89 /* LoginViewController.swift */,
+				3B2E5C1727CF634B0085AD89 /* StationsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B2E5C0F27CE75ED0085AD89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E5C1027CE76980085AD89 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B2E5C1227CE806F0085AD89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E5C1327CE80900085AD89 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +244,7 @@
 			name = Virta;
 			packageProductDependencies = (
 				3B2E5BEB27CD26150085AD89 /* SnapKit */,
+				3B2E5BFE27CE2A140085AD89 /* Alamofire */,
 			);
 			productName = Virta;
 			productReference = 3B2E5BAE27CD21AF0085AD89 /* Virta.app */;
@@ -247,6 +320,7 @@
 			mainGroup = 3B2E5BA527CD21AF0085AD89;
 			packageReferences = (
 				3B2E5BEA27CD26150085AD89 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3B2E5BFD27CE2A140085AD89 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3B2E5BAF27CD21AF0085AD89 /* Products */;
 			projectDirPath = "";
@@ -292,11 +366,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2E5BFA27CD4BEB0085AD89 /* UIView+.swift in Sources */,
+				3B2E5C0627CE366E0085AD89 /* APIEndpoint.swift in Sources */,
 				3B2E5BE727CD248C0085AD89 /* LoginViewController.swift in Sources */,
 				3B2E5BB627CD21AF0085AD89 /* InitialViewController.swift in Sources */,
 				3B2E5BB227CD21AF0085AD89 /* AppDelegate.swift in Sources */,
+				3B2E5C0D27CE66DC0085AD89 /* AuthModel.swift in Sources */,
+				3B2E5C1427CE80900085AD89 /* LoginViewModel.swift in Sources */,
+				3B2E5C0827CE375C0085AD89 /* VirtaAPI.swift in Sources */,
+				3B2E5C0227CE35010085AD89 /* VirtaAPIClientService.swift in Sources */,
 				3B2E5BB427CD21AF0085AD89 /* SceneDelegate.swift in Sources */,
+				3B2E5C0427CE35B80085AD89 /* VirtaAPIClient.swift in Sources */,
+				3B2E5C1127CE76980085AD89 /* LoginView.swift in Sources */,
+				3B2E5C1A27CF6B430085AD89 /* UIApplication+.swift in Sources */,
 				3B2E5BF827CD4BB60085AD89 /* LoginTextField.swift in Sources */,
+				3B2E5C1827CF634B0085AD89 /* StationsViewController.swift in Sources */,
+				3B2E5C0B27CE37CF0085AD89 /* AuthModelParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +728,14 @@
 				kind = branch;
 			};
 		};
+		3B2E5BFD27CE2A140085AD89 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -651,6 +743,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3B2E5BEA27CD26150085AD89 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		3B2E5BFE27CE2A140085AD89 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B2E5BFD27CE2A140085AD89 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
