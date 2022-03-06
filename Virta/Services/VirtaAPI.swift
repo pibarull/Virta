@@ -17,4 +17,8 @@ enum VirtaAPI {
     -> VirtaAPIEndpoint<AuthModelParameters, AuthModel> {
         return .init(path: "/auth", method: .post, requestData: authModelParameters)
     }
+
+    static func getStations(_ stationsModelParameters: StationsModelParameters) -> VirtaAPIEndpoint<StationsModelParameters, StationModel> {
+        return .init(path: "/stations", method: .get, requestData: stationsModelParameters)
+    }
 }
