@@ -94,7 +94,7 @@ final class LoginView: UIView {
         passwordTextField.getTextField().resignFirstResponder()
         loginViewModel?.sendAuthRequest(email: usernameTextField.getTextField().text ?? "",
                                         password: passwordTextField.getTextField().text ?? "") {
-            let vc = StationsViewController()
+            let vc = StationsTableViewController()
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             let topVC = UIApplication.topViewController()
