@@ -12,11 +12,11 @@ final class LoginViewModel {
     weak var vc: LoginViewController?
     var token: String = ""
 
-    lazy var virtaAPIClientService = VirtaAPIClientService()
+    private let virtaAPI: VirtaAPIClient = Injector.inject()
 
     func sendAuthRequest(email: String, password: String, completion: @escaping () -> Void) {
         let requestParameters = AuthModelParameters(email: email, code: password)
-        let request = virtaAPIClientService.request(VirtaAPI.setAuthData(requestParameters))
+        let request = virtaAPI.request(VirtaAPI.setAuthData(requestParameters))
 
         request?.validate().responseJSON(completionHandler: { response in
             switch response.result {

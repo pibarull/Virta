@@ -29,8 +29,24 @@
 		3B2E5C0D27CE66DC0085AD89 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C0C27CE66DC0085AD89 /* AuthModel.swift */; };
 		3B2E5C1127CE76980085AD89 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1027CE76980085AD89 /* LoginView.swift */; };
 		3B2E5C1427CE80900085AD89 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1327CE80900085AD89 /* LoginViewModel.swift */; };
-		3B2E5C1827CF634B0085AD89 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1727CF634B0085AD89 /* StationsViewController.swift */; };
+		3B2E5C1827CF634B0085AD89 /* StationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1727CF634B0085AD89 /* StationsTableViewController.swift */; };
 		3B2E5C1A27CF6B430085AD89 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1927CF6B430085AD89 /* UIApplication+.swift */; };
+		3B2E5C1C27CF70050085AD89 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1B27CF70050085AD89 /* StationModel.swift */; };
+		3B2E5C1E27D140290085AD89 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1D27D140290085AD89 /* StationsViewModel.swift */; };
+		3B2E5C2027D21D1D0085AD89 /* StationModelParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C1F27D21D1D0085AD89 /* StationModelParameters.swift */; };
+		3B2E5C2327D228140085AD89 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C2227D228140085AD89 /* Station.swift */; };
+		3B2E5C2527D228E70085AD89 /* Evse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C2427D228E70085AD89 /* Evse.swift */; };
+		3B2E5C2727D229EB0085AD89 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E5C2627D229EB0085AD89 /* Connector.swift */; };
+		3B7EE53B27D2D43C00CA6F78 /* StationsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE53A27D2D43C00CA6F78 /* StationsViewCell.swift */; };
+		3B7EE53E27D37BFE00CA6F78 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE53D27D37BFE00CA6F78 /* Builder.swift */; };
+		3B7EE54027D37FF800CA6F78 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE53F27D37FF800CA6F78 /* Optional+.swift */; };
+		3B7EE54227D3971000CA6F78 /* ConnectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE54127D3971000CA6F78 /* ConnectorView.swift */; };
+		3B7EE54827D4D83200CA6F78 /* ConnectorsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE54727D4D83200CA6F78 /* ConnectorsStackView.swift */; };
+		3B7EE54F27D5407000CA6F78 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE54E27D5407000CA6F78 /* StationViewController.swift */; };
+		3B7EE55227D5459900CA6F78 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE55127D5459900CA6F78 /* StationViewModel.swift */; };
+		3B7EE55A27D561C600CA6F78 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE55927D561C600CA6F78 /* ServiceAssembly.swift */; };
+		3B7EE55C27D563F700CA6F78 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE55B27D563F700CA6F78 /* Injector.swift */; };
+		3B7EE55F27D567CD00CA6F78 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7EE55E27D567CD00CA6F78 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +91,23 @@
 		3B2E5C0C27CE66DC0085AD89 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		3B2E5C1027CE76980085AD89 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3B2E5C1327CE80900085AD89 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		3B2E5C1727CF634B0085AD89 /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		3B2E5C1727CF634B0085AD89 /* StationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsTableViewController.swift; sourceTree = "<group>"; };
 		3B2E5C1927CF6B430085AD89 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		3B2E5C1B27CF70050085AD89 /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		3B2E5C1D27D140290085AD89 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
+		3B2E5C1F27D21D1D0085AD89 /* StationModelParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModelParameters.swift; sourceTree = "<group>"; };
+		3B2E5C2227D228140085AD89 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3B2E5C2427D228E70085AD89 /* Evse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evse.swift; sourceTree = "<group>"; };
+		3B2E5C2627D229EB0085AD89 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		3B7EE53A27D2D43C00CA6F78 /* StationsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewCell.swift; sourceTree = "<group>"; };
+		3B7EE53D27D37BFE00CA6F78 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		3B7EE53F27D37FF800CA6F78 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
+		3B7EE54127D3971000CA6F78 /* ConnectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorView.swift; sourceTree = "<group>"; };
+		3B7EE54727D4D83200CA6F78 /* ConnectorsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorsStackView.swift; sourceTree = "<group>"; };
+		3B7EE54E27D5407000CA6F78 /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
+		3B7EE55127D5459900CA6F78 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		3B7EE55927D561C600CA6F78 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		3B7EE55B27D563F700CA6F78 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +117,7 @@
 			files = (
 				3B2E5BEC27CD26150085AD89 /* SnapKit in Frameworks */,
 				3B2E5BFF27CE2A140085AD89 /* Alamofire in Frameworks */,
+				3B7EE55F27D567CD00CA6F78 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,10 +165,10 @@
 				3B2E5BB327CD21AF0085AD89 /* SceneDelegate.swift */,
 				3B2E5BFC27CD4C110085AD89 /* Components */,
 				3B2E5BFB27CD4C040085AD89 /* Extensions */,
-				3B2E5C1227CE806F0085AD89 /* ViewModel */,
+				3B7EE55827D5619300CA6F78 /* Dependencies */,
+				3B7EE53C27D37BE800CA6F78 /* Helpers */,
 				3B2E5C0027CE34DB0085AD89 /* Services */,
-				3B2E5C0F27CE75ED0085AD89 /* Views */,
-				3B2E5C0E27CE75DA0085AD89 /* Controllers */,
+				3B7EE54A27D5347D00CA6F78 /* Flow */,
 				3B2E5C0927CE37BF0085AD89 /* Model */,
 				3B2E5BB727CD21AF0085AD89 /* Main.storyboard */,
 				3B2E5BBA27CD21B00085AD89 /* Assets.xcassets */,
@@ -168,6 +200,7 @@
 			children = (
 				3B2E5BF927CD4BEB0085AD89 /* UIView+.swift */,
 				3B2E5C1927CF6B430085AD89 /* UIApplication+.swift */,
+				3B7EE53F27D37FF800CA6F78 /* Optional+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,36 +227,98 @@
 		3B2E5C0927CE37BF0085AD89 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3B2E5C0A27CE37CF0085AD89 /* AuthModelParameters.swift */,
-				3B2E5C0C27CE66DC0085AD89 /* AuthModel.swift */,
+				3B7EE54927D5343D00CA6F78 /* Auth */,
+				3B2E5C2127D21F0D0085AD89 /* Stations */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3B2E5C0E27CE75DA0085AD89 /* Controllers */ = {
+		3B2E5C2127D21F0D0085AD89 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E5C1B27CF70050085AD89 /* StationModel.swift */,
+				3B2E5C2227D228140085AD89 /* Station.swift */,
+				3B2E5C2427D228E70085AD89 /* Evse.swift */,
+				3B2E5C2627D229EB0085AD89 /* Connector.swift */,
+				3B2E5C1F27D21D1D0085AD89 /* StationModelParameters.swift */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		3B7EE53C27D37BE800CA6F78 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE53D27D37BFE00CA6F78 /* Builder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3B7EE54927D5343D00CA6F78 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E5C0A27CE37CF0085AD89 /* AuthModelParameters.swift */,
+				3B2E5C0C27CE66DC0085AD89 /* AuthModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3B7EE54A27D5347D00CA6F78 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
 				3B2E5BB527CD21AF0085AD89 /* InitialViewController.swift */,
-				3B2E5BE627CD248C0085AD89 /* LoginViewController.swift */,
-				3B2E5C1727CF634B0085AD89 /* StationsViewController.swift */,
+				3B7EE55027D5458100CA6F78 /* Station */,
+				3B7EE54C27D534BA00CA6F78 /* StationsList */,
+				3B7EE54B27D5349300CA6F78 /* Login */,
 			);
-			path = Controllers;
+			path = Flow;
 			sourceTree = "<group>";
 		};
-		3B2E5C0F27CE75ED0085AD89 /* Views */ = {
+		3B7EE54B27D5349300CA6F78 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3B2E5BE627CD248C0085AD89 /* LoginViewController.swift */,
+				3B2E5C1327CE80900085AD89 /* LoginViewModel.swift */,
 				3B2E5C1027CE76980085AD89 /* LoginView.swift */,
 			);
-			path = Views;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		3B2E5C1227CE806F0085AD89 /* ViewModel */ = {
+		3B7EE54C27D534BA00CA6F78 /* StationsList */ = {
 			isa = PBXGroup;
 			children = (
-				3B2E5C1327CE80900085AD89 /* LoginViewModel.swift */,
+				3B2E5C1727CF634B0085AD89 /* StationsTableViewController.swift */,
+				3B7EE53A27D2D43C00CA6F78 /* StationsViewCell.swift */,
+				3B2E5C1D27D140290085AD89 /* StationsViewModel.swift */,
+				3B7EE54D27D534EB00CA6F78 /* ConnectorViews */,
 			);
-			path = ViewModel;
+			path = StationsList;
+			sourceTree = "<group>";
+		};
+		3B7EE54D27D534EB00CA6F78 /* ConnectorViews */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE54127D3971000CA6F78 /* ConnectorView.swift */,
+				3B7EE54727D4D83200CA6F78 /* ConnectorsStackView.swift */,
+			);
+			path = ConnectorViews;
+			sourceTree = "<group>";
+		};
+		3B7EE55027D5458100CA6F78 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE54E27D5407000CA6F78 /* StationViewController.swift */,
+				3B7EE55127D5459900CA6F78 /* StationViewModel.swift */,
+			);
+			path = Station;
+			sourceTree = "<group>";
+		};
+		3B7EE55827D5619300CA6F78 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE55927D561C600CA6F78 /* ServiceAssembly.swift */,
+				3B7EE55B27D563F700CA6F78 /* Injector.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +340,7 @@
 			packageProductDependencies = (
 				3B2E5BEB27CD26150085AD89 /* SnapKit */,
 				3B2E5BFE27CE2A140085AD89 /* Alamofire */,
+				3B7EE55E27D567CD00CA6F78 /* Swinject */,
 			);
 			productName = Virta;
 			productReference = 3B2E5BAE27CD21AF0085AD89 /* Virta.app */;
@@ -321,6 +417,7 @@
 			packageReferences = (
 				3B2E5BEA27CD26150085AD89 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3B2E5BFD27CE2A140085AD89 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3B7EE55D27D567CD00CA6F78 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 3B2E5BAF27CD21AF0085AD89 /* Products */;
 			projectDirPath = "";
@@ -366,21 +463,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2E5BFA27CD4BEB0085AD89 /* UIView+.swift in Sources */,
+				3B2E5C2727D229EB0085AD89 /* Connector.swift in Sources */,
 				3B2E5C0627CE366E0085AD89 /* APIEndpoint.swift in Sources */,
 				3B2E5BE727CD248C0085AD89 /* LoginViewController.swift in Sources */,
+				3B2E5C1E27D140290085AD89 /* StationsViewModel.swift in Sources */,
 				3B2E5BB627CD21AF0085AD89 /* InitialViewController.swift in Sources */,
 				3B2E5BB227CD21AF0085AD89 /* AppDelegate.swift in Sources */,
+				3B2E5C2327D228140085AD89 /* Station.swift in Sources */,
 				3B2E5C0D27CE66DC0085AD89 /* AuthModel.swift in Sources */,
 				3B2E5C1427CE80900085AD89 /* LoginViewModel.swift in Sources */,
+				3B2E5C2027D21D1D0085AD89 /* StationModelParameters.swift in Sources */,
+				3B7EE54F27D5407000CA6F78 /* StationViewController.swift in Sources */,
+				3B7EE55C27D563F700CA6F78 /* Injector.swift in Sources */,
+				3B2E5C2527D228E70085AD89 /* Evse.swift in Sources */,
+				3B7EE54227D3971000CA6F78 /* ConnectorView.swift in Sources */,
 				3B2E5C0827CE375C0085AD89 /* VirtaAPI.swift in Sources */,
+				3B7EE55A27D561C600CA6F78 /* ServiceAssembly.swift in Sources */,
 				3B2E5C0227CE35010085AD89 /* VirtaAPIClientService.swift in Sources */,
+				3B7EE54827D4D83200CA6F78 /* ConnectorsStackView.swift in Sources */,
 				3B2E5BB427CD21AF0085AD89 /* SceneDelegate.swift in Sources */,
+				3B7EE54027D37FF800CA6F78 /* Optional+.swift in Sources */,
+				3B2E5C1C27CF70050085AD89 /* StationModel.swift in Sources */,
 				3B2E5C0427CE35B80085AD89 /* VirtaAPIClient.swift in Sources */,
+				3B7EE55227D5459900CA6F78 /* StationViewModel.swift in Sources */,
 				3B2E5C1127CE76980085AD89 /* LoginView.swift in Sources */,
 				3B2E5C1A27CF6B430085AD89 /* UIApplication+.swift in Sources */,
 				3B2E5BF827CD4BB60085AD89 /* LoginTextField.swift in Sources */,
-				3B2E5C1827CF634B0085AD89 /* StationsViewController.swift in Sources */,
+				3B7EE53B27D2D43C00CA6F78 /* StationsViewCell.swift in Sources */,
+				3B2E5C1827CF634B0085AD89 /* StationsTableViewController.swift in Sources */,
 				3B2E5C0B27CE37CF0085AD89 /* AuthModelParameters.swift in Sources */,
+				3B7EE53E27D37BFE00CA6F78 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +671,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHGFK98S7U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Virta/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -587,6 +700,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHGFK98S7U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Virta/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -738,6 +852,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		3B7EE55D27D567CD00CA6F78 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -750,6 +872,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3B2E5BFD27CE2A140085AD89 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		3B7EE55E27D567CD00CA6F78 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B7EE55D27D567CD00CA6F78 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

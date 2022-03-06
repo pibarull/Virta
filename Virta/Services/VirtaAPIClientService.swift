@@ -7,6 +7,7 @@
 
 import Alamofire
 import Foundation
+import Swinject
 
 final class VirtaAPIClientService {
     
@@ -32,4 +33,3 @@ extension VirtaAPIClientService: VirtaAPIClient {
         return apiRequest
     }
 }
-

@@ -15,3 +15,10 @@ protocol VirtaAPIClient {
 
     func request<Out: Decodable>(_ endpoint: VirtaAPIEndpoint<Never, Out>) -> DataRequest?
 }
+
+extension Injector where T == VirtaAPIClient {
+
+    static func inject() -> VirtaAPIClient {
+        return assembler.resolver.resolve(VirtaAPIClient.self)!
+    }
+}

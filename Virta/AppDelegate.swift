@@ -6,15 +6,24 @@
 //
 
 import UIKit
+import Swinject
+
+let assembler = Assembler()
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        setUpDIAssembler()
+
         return true
+    }
+
+    func setUpDIAssembler() {
+        assembler.apply(assemblies: [
+            ServiceAssembly()
+        ])
     }
 
     // MARK: UISceneSession Lifecycle

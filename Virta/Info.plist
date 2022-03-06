@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>qwer</string>
+	<string>qwerty</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>qwer</string>
+	<string>qwerty</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>qewr</string>
+	<string>qwerty</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
