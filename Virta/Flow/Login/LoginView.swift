@@ -98,7 +98,7 @@ final class LoginView: UIView {
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             let topVC = UIApplication.topViewController()
-            topVC?.present(nav, animated: false)
+            topVC?.present(nav, animated: true)
         }
     }
 
