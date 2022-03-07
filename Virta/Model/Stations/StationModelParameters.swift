@@ -7,15 +7,15 @@
 
 struct StationsModelParameters {
 
-    var lastUpdate: String
-    var latMin: Float
-    var latMax: Float
-    var longMin: Float
-    var longMax: Float
-    var from: Int
+    var lastUpdate: String?
+    var latMin: Double
+    var latMax: Double
+    var longMin: Double
+    var longMax: Double
+    var from: Int?
     var limit: Int
     var privilegedStations: Int?
-    var includePoi: Int
+    var includePoi: Int?
 }
 
 extension StationsModelParameters: Encodable {
