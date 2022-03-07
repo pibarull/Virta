@@ -25,6 +25,7 @@ final class LoginViewModel {
                     let authResponse = try JSONDecoder().decode(AuthModel.self, from: response.data!)
                     self.token = authResponse.token
 
+                    // TODO: Implement secure storage of data with KeyChain
                     UserDefaults.standard.set(self.token, forKey: "token")
                     UserDefaults.standard.set(true, forKey: "logged_in")
 

@@ -14,6 +14,7 @@ final class InitialViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        // TODO: Implement secure storage of data with KeyChain
         let isLoggedIn = UserDefaults.standard.bool(forKey: "logged_in")
 
         presentFirstViewController(isLoggedIn: isLoggedIn)
