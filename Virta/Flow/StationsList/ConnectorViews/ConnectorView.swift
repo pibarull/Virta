@@ -69,6 +69,7 @@ final class ConnectorView: UIView {
             make.right.equalTo(powerKwLabel.snp.left).offset(-10)
             make.bottom.equalTo(connectorNumLabel.snp.top)
             make.centerY.equalToSuperview().priority(.medium)
+            make.size.equalTo(30)
         }
 
         connectorNumLabel.snp.makeConstraints { make in
@@ -85,10 +86,6 @@ final class ConnectorView: UIView {
             make.bottom.right.equalToSuperview()
             make.top.equalTo(powerValueLabel.snp.bottom)
         }
-
-        connectorImageView.snp.makeConstraints { make in
-            make.size.equalTo(30)
-        }
     }
 
     func setUpView(amount: Int, power: Int) {
@@ -103,6 +100,7 @@ final class ConnectorView: UIView {
                 make.right.equalTo(powerValueLabel.snp.left).offset(-10)
                 make.right.equalTo(powerKwLabel.snp.left).offset(-10)
                 make.centerY.equalToSuperview()
+                make.size.equalTo(30)
             }
         }
     }
