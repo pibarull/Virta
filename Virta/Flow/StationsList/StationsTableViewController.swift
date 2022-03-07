@@ -63,21 +63,23 @@ final class StationsTableViewController: UITableViewController, CLLocationManage
             currentLocation = locationManager.location
         }
     }
+}
+
+extension StationsTableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let coordinate: CLLocation = .init(latitude: .init(stations[indexPath.row].latitude),
                                            longitude: .init(stations[indexPath.row].longitude))
 
-        let distanceInMeters = Float(currentLocation?.distance(from: coordinate) ?? 0)
-        let formatter = NumberFormatter()
-        formatter.maximumFractionDigits = 0
-        formatter.roundingMode = .halfEven
-        formatter.decimalSeparator = ","
-        let distanceString = formatter.string(from: NSNumber(value: distanceInMeters)) ?? ""
+        let distanceInMeters = Double(currentLocation?.distance(from: coordinate) ?? 0)
+
+        let lengthRepresenter = LengthRepresenter(unitOfMeasure: .meters)
+        let distanceString = lengthRepresenter.present(representableValue: distanceInMeters)
+
         let stationsViewCell = StationsViewCellBuilder()
             .with(\.name, setTo: stations[indexPath.row].name)
             .with(\.city, setTo: stations[indexPath.row].city)
-            .with(\.distance, setTo: "\(distanceString) m")
+            .with(\.distance, setTo: distanceString)
             .with(\.evses, setTo: stations[indexPath.row].evses)
             .build()
 
@@ -86,15 +88,6 @@ final class StationsTableViewController: UITableViewController, CLLocationManage
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stations.count
-    }
-
-    private func dequeueProjectsListCell(_ tableView: UITableView) -> StationsViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.stationsViewCellIdentifier)
-        guard let stationsViewCell = cell as? StationsViewCell else {
-            fatalError("Expected `StationsViewCell` to be registered")
-        }
-
-        return stationsViewCell
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
