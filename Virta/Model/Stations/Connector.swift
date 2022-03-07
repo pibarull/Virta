@@ -22,13 +22,6 @@ extension Connector: Decodable {
         case maxKw
         case currentType
     }
-
-//    init(from decoder: Decoder) throws {
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//
-//        type = try! container.decode(String.self, forKey: .type)
-//        maxKw = try! container.decode(Int.self, forKey: .maxKw)
-//    }
 }
 
 extension Connector: Equatable {}

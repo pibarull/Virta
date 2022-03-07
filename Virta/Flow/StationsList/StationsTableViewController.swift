@@ -18,15 +18,11 @@ private enum Constants {
 final class StationsTableViewController: UITableViewController, CLLocationManagerDelegate {
 
     private var stationsViewModel = StationsViewModel()
-    private lazy var virtaAPIClientService = VirtaAPIClientService()
-    private let locationManager = CLLocationManager()
-    private var currentLocation: CLLocation?
+    private let locationProvider: LocationProvider = Injector.inject()
     private var stations: [Station] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setUpLocationManager()
 
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(StationsViewCell.self,
@@ -36,42 +32,16 @@ final class StationsTableViewController: UITableViewController, CLLocationManage
 
         stationsViewModel.vc = self
         stations = stationsViewModel.getStations()
-
-        stations.sort { lhs, rhs in
-            let coordinateLhs: CLLocation = .init(latitude: .init(lhs.latitude),
-                                               longitude: .init(lhs.longitude))
-            let coordinateRhs: CLLocation = .init(latitude: .init(rhs.latitude),
-                                               longitude: .init(rhs.longitude))
-            let distanceLhs = Float(currentLocation?.distance(from: coordinateLhs) ?? 0)
-            let distanceRhs = Float(currentLocation?.distance(from: coordinateRhs) ?? 0)
-            return distanceLhs < distanceRhs
-        }
-    }
-
-    private func setUpLocationManager() {
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestAlwaysAuthorization()
-
-        self.locationManager.requestWhenInUseAuthorization()
-
-        locationManager.startUpdatingLocation()
-
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-            currentLocation = locationManager.location
-        }
     }
 }
 
 extension StationsTableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let coordinate: CLLocation = .init(latitude: .init(stations[indexPath.row].latitude),
-                                           longitude: .init(stations[indexPath.row].longitude))
+        let point: CLLocation = .init(latitude: .init(stations[indexPath.row].latitude),
+                                      longitude: .init(stations[indexPath.row].longitude))
 
-        let distanceInMeters = Double(currentLocation?.distance(from: coordinate) ?? 0)
+        let distanceInMeters = locationProvider.getDistanceFromCurrentLocation(to: point)
 
         let lengthRepresenter = LengthRepresenter(unitOfMeasure: .meters)
         let distanceString = lengthRepresenter.present(representableValue: distanceInMeters)
@@ -92,5 +62,12 @@ extension StationsTableViewController {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stationId = stations[indexPath.row].id
+        let vc = StationViewController(stationId: stationId)
+
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

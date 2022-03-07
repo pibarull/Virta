@@ -47,6 +47,16 @@
 		3B7EE55A27D561C600CA6F78 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE55927D561C600CA6F78 /* ServiceAssembly.swift */; };
 		3B7EE55C27D563F700CA6F78 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE55B27D563F700CA6F78 /* Injector.swift */; };
 		3B7EE55F27D567CD00CA6F78 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7EE55E27D567CD00CA6F78 /* Swinject */; };
+		3B7EE57F27D646CB00CA6F78 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE57D27D646CB00CA6F78 /* LocationProvider.swift */; };
+		3B7EE58027D646CB00CA6F78 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE57E27D646CB00CA6F78 /* LocationService.swift */; };
+		3B7EE58A27D646F100CA6F78 /* Modificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE58227D646F100CA6F78 /* Modificator.swift */; };
+		3B7EE58B27D646F100CA6F78 /* UnitRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE58427D646F100CA6F78 /* UnitRepresenter.swift */; };
+		3B7EE58C27D646F100CA6F78 /* LengthRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE58527D646F100CA6F78 /* LengthRepresenter.swift */; };
+		3B7EE58D27D646F100CA6F78 /* UnitConverterModificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE58727D646F100CA6F78 /* UnitConverterModificator.swift */; };
+		3B7EE58E27D646F100CA6F78 /* NumberFormatterModificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE58827D646F100CA6F78 /* NumberFormatterModificator.swift */; };
+		3B7EE58F27D646F100CA6F78 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE58927D646F100CA6F78 /* Representer.swift */; };
+		3B7EE59127D6498200CA6F78 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE59027D6498200CA6F78 /* Pricing.swift */; };
+		3B7EE59327D649E200CA6F78 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE59227D649E200CA6F78 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +118,16 @@
 		3B7EE55127D5459900CA6F78 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
 		3B7EE55927D561C600CA6F78 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		3B7EE55B27D563F700CA6F78 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		3B7EE57D27D646CB00CA6F78 /* LocationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		3B7EE57E27D646CB00CA6F78 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		3B7EE58227D646F100CA6F78 /* Modificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modificator.swift; sourceTree = "<group>"; };
+		3B7EE58427D646F100CA6F78 /* UnitRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitRepresenter.swift; sourceTree = "<group>"; };
+		3B7EE58527D646F100CA6F78 /* LengthRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthRepresenter.swift; sourceTree = "<group>"; };
+		3B7EE58727D646F100CA6F78 /* UnitConverterModificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConverterModificator.swift; sourceTree = "<group>"; };
+		3B7EE58827D646F100CA6F78 /* NumberFormatterModificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatterModificator.swift; sourceTree = "<group>"; };
+		3B7EE58927D646F100CA6F78 /* Representer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Representer.swift; sourceTree = "<group>"; };
+		3B7EE59027D6498200CA6F78 /* Pricing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
+		3B7EE59227D649E200CA6F78 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +220,7 @@
 			children = (
 				3B2E5BF927CD4BEB0085AD89 /* UIView+.swift */,
 				3B2E5C1927CF6B430085AD89 /* UIApplication+.swift */,
+				3B7EE59227D649E200CA6F78 /* String+.swift */,
 				3B7EE53F27D37FF800CA6F78 /* Optional+.swift */,
 			);
 			path = Extensions;
@@ -216,6 +237,7 @@
 		3B2E5C0027CE34DB0085AD89 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3B7EE57C27D646CB00CA6F78 /* LocationService */,
 				3B2E5C0127CE35010085AD89 /* VirtaAPIClientService.swift */,
 				3B2E5C0327CE35B80085AD89 /* VirtaAPIClient.swift */,
 				3B2E5C0527CE366E0085AD89 /* APIEndpoint.swift */,
@@ -239,6 +261,7 @@
 				3B2E5C1B27CF70050085AD89 /* StationModel.swift */,
 				3B2E5C2227D228140085AD89 /* Station.swift */,
 				3B2E5C2427D228E70085AD89 /* Evse.swift */,
+				3B7EE59027D6498200CA6F78 /* Pricing.swift */,
 				3B2E5C2627D229EB0085AD89 /* Connector.swift */,
 				3B2E5C1F27D21D1D0085AD89 /* StationModelParameters.swift */,
 			);
@@ -249,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7EE53D27D37BFE00CA6F78 /* Builder.swift */,
+				3B7EE58127D646F100CA6F78 /* Representers */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -319,6 +343,44 @@
 				3B7EE55B27D563F700CA6F78 /* Injector.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		3B7EE57C27D646CB00CA6F78 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE57D27D646CB00CA6F78 /* LocationProvider.swift */,
+				3B7EE57E27D646CB00CA6F78 /* LocationService.swift */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
+		3B7EE58127D646F100CA6F78 /* Representers */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE58227D646F100CA6F78 /* Modificator.swift */,
+				3B7EE58327D646F100CA6F78 /* Representers */,
+				3B7EE58627D646F100CA6F78 /* Modificators */,
+				3B7EE58927D646F100CA6F78 /* Representer.swift */,
+			);
+			path = Representers;
+			sourceTree = "<group>";
+		};
+		3B7EE58327D646F100CA6F78 /* Representers */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE58427D646F100CA6F78 /* UnitRepresenter.swift */,
+				3B7EE58527D646F100CA6F78 /* LengthRepresenter.swift */,
+			);
+			path = Representers;
+			sourceTree = "<group>";
+		};
+		3B7EE58627D646F100CA6F78 /* Modificators */ = {
+			isa = PBXGroup;
+			children = (
+				3B7EE58727D646F100CA6F78 /* UnitConverterModificator.swift */,
+				3B7EE58827D646F100CA6F78 /* NumberFormatterModificator.swift */,
+			);
+			path = Modificators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,15 +524,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7EE58D27D646F100CA6F78 /* UnitConverterModificator.swift in Sources */,
 				3B2E5BFA27CD4BEB0085AD89 /* UIView+.swift in Sources */,
 				3B2E5C2727D229EB0085AD89 /* Connector.swift in Sources */,
 				3B2E5C0627CE366E0085AD89 /* APIEndpoint.swift in Sources */,
+				3B7EE59327D649E200CA6F78 /* String+.swift in Sources */,
 				3B2E5BE727CD248C0085AD89 /* LoginViewController.swift in Sources */,
 				3B2E5C1E27D140290085AD89 /* StationsViewModel.swift in Sources */,
 				3B2E5BB627CD21AF0085AD89 /* InitialViewController.swift in Sources */,
 				3B2E5BB227CD21AF0085AD89 /* AppDelegate.swift in Sources */,
 				3B2E5C2327D228140085AD89 /* Station.swift in Sources */,
 				3B2E5C0D27CE66DC0085AD89 /* AuthModel.swift in Sources */,
+				3B7EE58F27D646F100CA6F78 /* Representer.swift in Sources */,
 				3B2E5C1427CE80900085AD89 /* LoginViewModel.swift in Sources */,
 				3B2E5C2027D21D1D0085AD89 /* StationModelParameters.swift in Sources */,
 				3B7EE54F27D5407000CA6F78 /* StationViewController.swift in Sources */,
@@ -483,14 +548,21 @@
 				3B7EE54827D4D83200CA6F78 /* ConnectorsStackView.swift in Sources */,
 				3B2E5BB427CD21AF0085AD89 /* SceneDelegate.swift in Sources */,
 				3B7EE54027D37FF800CA6F78 /* Optional+.swift in Sources */,
+				3B7EE57F27D646CB00CA6F78 /* LocationProvider.swift in Sources */,
 				3B2E5C1C27CF70050085AD89 /* StationModel.swift in Sources */,
+				3B7EE58C27D646F100CA6F78 /* LengthRepresenter.swift in Sources */,
 				3B2E5C0427CE35B80085AD89 /* VirtaAPIClient.swift in Sources */,
+				3B7EE58E27D646F100CA6F78 /* NumberFormatterModificator.swift in Sources */,
 				3B7EE55227D5459900CA6F78 /* StationViewModel.swift in Sources */,
+				3B7EE58B27D646F100CA6F78 /* UnitRepresenter.swift in Sources */,
 				3B2E5C1127CE76980085AD89 /* LoginView.swift in Sources */,
 				3B2E5C1A27CF6B430085AD89 /* UIApplication+.swift in Sources */,
 				3B2E5BF827CD4BB60085AD89 /* LoginTextField.swift in Sources */,
+				3B7EE58027D646CB00CA6F78 /* LocationService.swift in Sources */,
 				3B7EE53B27D2D43C00CA6F78 /* StationsViewCell.swift in Sources */,
 				3B2E5C1827CF634B0085AD89 /* StationsTableViewController.swift in Sources */,
+				3B7EE59127D6498200CA6F78 /* Pricing.swift in Sources */,
+				3B7EE58A27D646F100CA6F78 /* Modificator.swift in Sources */,
 				3B2E5C0B27CE37CF0085AD89 /* AuthModelParameters.swift in Sources */,
 				3B7EE53E27D37BFE00CA6F78 /* Builder.swift in Sources */,
 			);
