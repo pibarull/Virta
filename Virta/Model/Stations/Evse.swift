@@ -9,6 +9,7 @@ struct Evse: Hashable {
 
     var id: Int
     var connectors: [Connector]
+    var pricing: [Pricing]?
     var groupName: String
 }
 

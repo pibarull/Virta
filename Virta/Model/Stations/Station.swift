@@ -11,7 +11,10 @@ struct Station {
     var latitude: Float
     var longitude: Float
     var name: String
+    var icon: Int?
+    var address: String?
     var city: String
+    var openHours: String?
     var provider: String
     var evses: [Evse]
 }
@@ -24,7 +27,10 @@ extension Station: Decodable {
         case latitude
         case longitude
         case name
+        case icon
+        case address
         case city
+        case openHours
         case provider
         case evses
     }
