@@ -23,12 +23,6 @@ final class StationsViewCell: UITableViewCell {
     private let distanceImage = UIImageView()
     private var connectorView: ConnectorsStackView?
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setUpCell()
-        setUpLayout()
-    }
-
     init(withBuilder builder: StationsViewCellBuilder) {
         super.init(style: .default, reuseIdentifier: nil)
 
@@ -46,7 +40,8 @@ final class StationsViewCell: UITableViewCell {
         }
 
         setUpCell()
-        setUpHeaderContainerView()
+        setUpName()
+        setUpCity()
         setUpContainerStackView()
         setUpHeaderStackView()
         setUpDistanceLabel()
@@ -78,8 +73,13 @@ final class StationsViewCell: UITableViewCell {
         backgroundColor = .clear
         contentView.addSubview(containerView)
         containerView.addSubview(containerStackView)
-        setUpName()
-        setUpCity()
+        containerStackView.addArrangedSubview(headerStackView)
+        headerStackView.addArrangedSubview(headerContainerView)
+        headerStackView.addArrangedSubview(cityLabel)
+        containerStackView.addArrangedSubview(connectorView!)
+        headerContainerView.addSubview(nameLabel)
+        headerContainerView.addSubview(distanceLabel)
+        headerContainerView.addSubview(distanceImage)
     }
 
     private func setUpName() {
@@ -97,24 +97,12 @@ final class StationsViewCell: UITableViewCell {
     }
 
     private func setUpContainerStackView() {
-        containerStackView.addArrangedSubview(headerStackView)
-        containerStackView.addArrangedSubview(connectorView!)
-
         containerStackView.axis = .vertical
         containerStackView.spacing = 6
     }
 
     private func setUpHeaderStackView() {
-        headerStackView.addArrangedSubview(headerContainerView)
-        headerStackView.addArrangedSubview(cityLabel)
-
         headerStackView.axis = .vertical
-    }
-
-    private func setUpHeaderContainerView() {
-        headerContainerView.addSubview(nameLabel)
-        headerContainerView.addSubview(distanceLabel)
-        headerContainerView.addSubview(distanceImage)
     }
 
     private func setUpDistanceLabel() {
